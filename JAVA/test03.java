@@ -10,8 +10,7 @@ class Solution {
             if(s.substring(i,i+1).charAt(0) == '(')
                 stack.push("(");
             else{
-                if(stack.empty())
-                    return false;
+                if(stack.empty()) return false;
                 else stack.pop();
             }
         }
