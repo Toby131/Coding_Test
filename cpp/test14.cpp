@@ -15,9 +15,7 @@ bool solution(int x) {
     }
         
     if(x1 % result != 0)
-    {
         answer = false;
-    }
     else
         answer = true;
     return answer;
