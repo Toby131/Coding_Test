@@ -1,6 +1,5 @@
 #include <string>
 #include <vector>
-
 using namespace std;
 
 int GCD(int n, int m)
@@ -14,7 +13,6 @@ int GCD(int n, int m)
 	}
 	return n;
 }
-
 vector<int> solution(int n, int m) {
     vector<int> answer;
     answer.push_back(GCD(n,m));
