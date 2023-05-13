@@ -8,10 +8,7 @@ string solution(int a, int b) {
     string week[7] = {"FRI", "SAT","SUN", "MON", "TUE", "WED", "THU"};
     int month[13] = {0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     int sum=0;
-    for(int i = 0; i < a; i++)
-    {
-        sum += month[i];
-    }
+    for(int i = 0; i < a; i++) sum += month[i];
     sum += b-1;
     answer = week[sum%7];
     return answer;
