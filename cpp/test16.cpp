@@ -11,4 +11,4 @@ vector<long long> solution(int x, int n) {
         answer.push_back(x+(x*i));
     }
     return answer;
-}
+} 
