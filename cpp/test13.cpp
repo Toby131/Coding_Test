@@ -6,6 +6,7 @@ using namespace std;
 int solution(int n) {
     int answer = 0;
     long long num = n;
+    
     while(num != 1)
     {
         if(answer < 500)
