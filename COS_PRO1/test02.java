@@ -4,7 +4,7 @@ import java.util.*;
 class Main {
     public String func_a(String str, int len){
         String padZero = "";
-        int padSize = str.length();
+        int padSize = len - str.length();
         for(int i = 0; i < padSize; i++)
             padZero += "0";
         return padZero + str;
