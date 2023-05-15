@@ -16,7 +16,7 @@ class Main{
             else if(recordA[i] == func(recordB[i]))
                 cnt = cnt + 3;
             else
-                cnt = cnt - 1;
+                cnt = Math.max(0, cnt - 1);
         }
         return cnt;
     }
