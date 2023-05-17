@@ -3,28 +3,22 @@ import java.util.*;
 
 class Main {
     public int[] solution(String commands) {
-        
-        int[] answer = new int[2];
-			  int x = 0;
-				int y = 0;
-			  String[] arr = commands.split("");
-			  for(int i = 0 ; i < arr.length; i++){
-					if(arr[i].equals("L")){
-						x -= 1;
-					}
-					else if(arr[i].equals("R")){
-						x += 1;
-					}
-					else if(arr[i].equals("U")){
-						y += 1;
-					}
-				  else if(arr[i].equals("D")){
-						y -= 1;
-					}
-				}
-		  answer[0] = x;
-			answer[1] = y;
-			return answer;
+        int[] answer = {0,0};
+			
+        for(int i = 0 ; i < commands.length(); i++){
+                if(commands.charAt(i) == 'L')
+                        answer[0] -= 1;
+		
+                else if(commands.charAt(i) == 'R')
+                        answer[0] += 1;
+				
+                else if(commands.charAt(i) == 'U')
+                        answer[1] += 1;
+				
+                else if(commands.charAt(i) == 'D')
+                        answer[1] -= 1;
+        }
+        return answer;
     }
 
     // 아래는 테스트케이스 출력을 해보기 위한 main 메소드입니다.
