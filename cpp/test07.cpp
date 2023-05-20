@@ -11,7 +11,6 @@ int solution(int n)
         s[i] = s[i] - 48;
         //48대신 '0'으로 써도 된다.
         //s[i] = s[i]-'0'; 이렇게..
-        
         answer += s[i];
     }
     return answer;
