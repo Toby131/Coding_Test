@@ -11,16 +11,12 @@ vector<int> solution(vector<int> lottos, vector<int> win_nums)
     for(int i = 0 ; i < lottos.size(); i++)
     {
         if(lottos[i] == 0)
-        {
             zero += 1;
-        }
         
         for(int j = 0 ; j < lottos.size(); j++)
         {
             if(lottos[i] == win_nums[j])
-            {
                 count += 1;
-            }
         }
     }
     
