@@ -14,13 +14,9 @@ string solution(string s) {
             continue;
         }
         if(pos == 0 || pos % 2 ==0)
-        {
             s[i] = toupper(s[i]);
-        }
         else
-        {
             s[i] = tolower(s[i]);
-        }
         pos++;
     }
     answer = s;
