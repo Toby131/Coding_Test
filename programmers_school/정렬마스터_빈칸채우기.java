@@ -9,9 +9,7 @@ class Solution {
                 int key = sequence[i];
                 int j = i - 1;
                 while (j >= 0 && sequence[j] > key) {
-                    sequence[j + 1] = 
-sequence[j]
-;
+                    sequence[j + 1] = sequence[j];
                     j--;
                 }
                 sequence[j + 1] = key;
@@ -25,23 +23,15 @@ sequence[j]
                     }
                 }
                 int temp = sequence[i];
-                sequence[i] = 
-sequence[minIdx]
-;
-                
-sequence[minIdx]
- = temp;
+                sequence[i] = sequence[minIdx];
+                sequence[minIdx] = temp;
             }
         } else if (sorting.equals("Bubble Sort")) {
             for (int i = 0; i < n - 1; i++) {
                 for (int j = 0; j < n - i - 1; j++) {
                     if (sequence[j] > sequence[j + 1]) {
-                        int temp = 
-sequence[j]
-;
-                        
-sequence[j]
- = sequence[j + 1];
+                        int temp = sequence[j];
+                        sequence[j] = sequence[j + 1];
                         sequence[j + 1] = temp;
                     }
                 }
