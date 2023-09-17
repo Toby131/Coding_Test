@@ -9,9 +9,7 @@ class Solution {
 
             for (char c : pw.toCharArray()) {
                 int index = c - 'a';
-                
-char_used[index]
- = true;
+                char_used[index] = true;
             }
 
             int unique_char_count = 0;
@@ -22,9 +20,7 @@ char_used[index]
             }
 
             if (unique_char_count >= 5) {
-                
-valid_count++
-;
+                valid_count++;
             }
         }
 
